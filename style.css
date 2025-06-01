@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: inherit;
+}
+html{
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    font-family: "Poppins",sans-serif;
+    flex-direction: column;
+    background-color: #ececec;
+}
+h2{
+    font-size: 2.7rem;
+    display: block;
+    margin-bottom: 1.5rem;
+}
+.back{
+    position: relative;
+    margin-right: 0.5rem;
+}
+.back::after{
+    display: block;
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 1;
+    z-index: -1;
+    transform: scale(1.07,1.05) skewX(-15deg);
+    background-image: linear-gradient(to top left,#40c057,#b2f2bb);
+}
+form{
+    padding: 2rem;
+    width: 35rem;
+    box-shadow: 0 0 10px 1px rgba(0,0,0,0.1);
+    border-radius: 1rem;
+    background-color: #fff;
+}
+label{
+    display: block;
+    font-size: 1.6rem;
+    margin-bottom: 1rem;
+    position: relative;
+    max-width: fit-content;
+
+}
+label::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    background-color: #51cf66;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    border-radius: 10rem;
+}
+input{
+    display: block;
+    width: 100%;
+    border: none;
+    /* height: 30px; */
+    border: 1px solid rgb(0, 0, 0,0.15);
+    border-radius: 10px;
+    margin-bottom: 1.2rem;
+    font-family: inherit;
+    padding: 1rem 1.2rem;
+    font-size: 1.4rem;
+    transition: all .5s;
+
+}
+input:focus {
+    outline: none;
+    color: #333;
+    border:  1px solid #bbb;
+    transform: translateY(-3px);
+        box-shadow: 0 5px 15px 0 rgba(0,0,0,0.1);
+
+}
+button{
+background: none;
+border: none;
+cursor: pointer;
+background-color: #51cf66;
+padding: 1rem 1.7rem;
+color: #fff;
+font-weight: 500;
+border-radius: 10rem;
+transition: all .5s;
+font-family: inherit;
+font-size: 1.4rem;
+}
+button:hover{
+    background-color: #2f9e44;
+    transform: translateY(-5px);
+    box-shadow: 0 10px 10px 0 rgba(0,0,0,0.1);
+}
